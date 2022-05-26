@@ -33,12 +33,14 @@
   cursor: pointer;
 }
 
+/* Requisito 6 */
 .newspaper {
   background-color: antiquewhite;
   font-family: Times New Roman, Times, serif;
   font-weight: 700;
 }
 
+/* Requisito 7 */
 .magazine1 {
   background-color: teal;
   color: white;
@@ -47,6 +49,7 @@
   text-transform: uppercase;
 }
 
+/* Requisito 8 */
 .magazine2 {
   background-image: url('images/pink-pattern.png');
   color: fuchsia;
@@ -55,7 +58,14 @@
   text-transform: uppercase;
 }
 
+/* Requisito 9 */
 .medium {
   font-size: 20px;
   padding: 8px;
+}
+
+/* Requisito 10 */
+.big {
+  font-size: 30px;
+  padding: 10px;
 }
