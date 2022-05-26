@@ -75,3 +75,8 @@
   font-size: 40px;
   padding: 15px;
 }
+
+/* Requisito 12 */
+.rotateleft {
+  transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
+}
