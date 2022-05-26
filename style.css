@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap') ;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,25 +7,78 @@
   border: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: url('blood-letter.png') no-repeat right bottom, linear-gradient(to right bottom, #475ba1, #8976c5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 600px;
+}
+
+main {
+  margin: 20px auto;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 600px;
+  border-radius: 5px;
+  border: 3px solid #e1afee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+span {
+  cursor: pointer;
+}
+
 .title {
-  margin-top: 10px;
-  margin-left: 20px;
+  font-family: Mystery Quest, cursive;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.container {
+  margin-top: 20px;
+  max-width: 500px;
 }
 
 #carta-texto {
-  border: 1px solid #31d2f2;
+  border: 1px solid #af91d6;
   border-radius: 4px;
   padding: 10px;
-  width: 160px;
+  width: 500px;
+}
+
+#carta-texto:focus {
+  outline: none;
+  border: 2px solid #af91d6;
+  box-shadow: 0 0 10px #ccc;
 }
 
 #criar-carta {
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding: 10px 30px;
   border-radius: 4px;
-  font-size: 16px;
-  font-weight: 900;
-  background-color: #ffca2c;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #8976c5;
   box-shadow: 2px 2px 1px #ccc;
   transition: 0.5s ease;
 }
@@ -34,11 +89,19 @@
 }
 
 #carta-gerada {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-span {
-  cursor: pointer;
+#carta-contador {
+  font-family: Mystery Quest, cursive;
+  color: #5e5fb0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 /* Requisito 6 */
