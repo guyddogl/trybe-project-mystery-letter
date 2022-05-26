@@ -11,12 +11,11 @@ function generateLetter() {
     arrayWords.push(splitString[index]);
   }
   pLetter.innerText = '';
-  for (let words of arrayWords) {
-    let spanWord = document.createElement('span');
-    spanWord.innerText = `${words}`;
+  for (let words = 0; words < arrayWords.length; words += 1) {
+    const spanWord = document.createElement('span');
+    spanWord.innerText = `${arrayWords[words]}`;
     pLetter.appendChild(spanWord);
   }
-  // pLetter.innerHTML = inputLetter.value;
   console.log(arrayWords);
 }
 
