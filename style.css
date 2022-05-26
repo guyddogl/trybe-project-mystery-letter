@@ -14,7 +14,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: url('blood-letter.png') no-repeat right bottom, linear-gradient(to right bottom, #475ba1, #8976c5);
+  background: url('./assets/blood-letter.png') no-repeat right bottom, linear-gradient(to right bottom, #475ba1, #8976c5);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
