@@ -6,25 +6,29 @@ const button = document.getElementById('criar-carta'); // Botão Criar Carta mis
 function randomClassStyle() {
   const arrayStyles = ['newspaper', 'magazine1', 'magazine2'];
   const randomClass = Math.floor(Math.random() * arrayStyles.length);
-  return classStyle = arrayStyles[randomClass];
+  const classStyle = arrayStyles[randomClass];
+  return classStyle;
 }
 
 function randomClassSize() {
   const arraySizes = ['medium', 'big', 'reallybig'];
   const randomClass = Math.floor(Math.random() * arraySizes.length);
-  return classSize = arraySizes[randomClass];
+  const classSize = arraySizes[randomClass];
+  return classSize;
 }
 
 function randomClassRotate() {
   const arrayRotates = ['rotateleft', 'rotateright'];
   const randomClass = Math.floor(Math.random() * arrayRotates.length);
-  return classSize = arrayRotates[randomClass];
+  const classSize = arrayRotates[randomClass];
+  return classSize;
 }
 
 function randomClassSkew() {
   const arraySkews = ['skewleft', 'skewright'];
   const randomClass = Math.floor(Math.random() * arraySkews.length);
-  return classSize = arraySkews[randomClass];
+  const classSize = arraySkews[randomClass];
+  return classSize;
 }
 
 // Requisito 3 e 4
