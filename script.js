@@ -2,15 +2,6 @@ const inputLetter = document.getElementById('carta-texto'); // Input com o texto
 const pLetter = document.getElementById('carta-gerada'); // Tag P nde a carta misteriosa será exibida
 const button = document.getElementById('criar-carta'); // Botão Criar Carta misteriosa
 
-// Requisito 5
-function emptyInput() {
-  if (inputLetter.value === '' || inputLetter.value === ' ') {
-    pLetter.innerText = 'Por favor, digite o conteúdo da carta.';
-  } else {
-    generateLetter();
-  }
-}
-
 // Requisito 3 e 4
 function generateLetter() {
   const inputValue = inputLetter.value;
@@ -26,6 +17,15 @@ function generateLetter() {
     pLetter.appendChild(spanWord);
   }
   console.log(arrayWords);
+}
+
+// Requisito 5
+function emptyInput() {
+  if (inputLetter.value === '' || inputLetter.value === ' ') {
+    pLetter.innerText = 'Por favor, digite o conteúdo da carta.';
+  } else {
+    generateLetter();
+  }
 }
 
 function createLetter() {
