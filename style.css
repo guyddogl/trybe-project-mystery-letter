@@ -32,3 +32,9 @@
   box-shadow: 3px 3px 4px #ccc;
   cursor: pointer;
 }
+
+.newspaper {
+  background-color: rgb(250, 235, 215);
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
+}
