@@ -1,6 +1,7 @@
 const inputLetter = document.getElementById('carta-texto'); // Input com o texto do usuário
 const pLetter = document.getElementById('carta-gerada'); // Tag P nde a carta misteriosa será exibida
 const button = document.getElementById('criar-carta'); // Botão Criar Carta misteriosa
+const pCount = document.getElementById('carta-contador');
 
 // Requisito 16
 function randomClassStyle() {
@@ -43,13 +44,18 @@ function newRandomClass(event) {
 }
 
 // Requisito 3 e 4
-function generateLetter() {
+function getInputText() {
   const inputValue = inputLetter.value;
   const arrayWords = [];
   const splitString = inputValue.split(' ');
   for (let index = 0; index < splitString.length; index += 1) {
     arrayWords.push(splitString[index]);
   }
+  return arrayWords;
+}
+
+function generateLetter() {
+  const arrayWords = getInputText();
   pLetter.innerText = '';
   for (let words = 0; words < arrayWords.length; words += 1) {
     const spanWord = document.createElement('span');
@@ -62,6 +68,7 @@ function generateLetter() {
     spanWord.addEventListener('click', newRandomClass);
     pLetter.appendChild(spanWord);
   }
+  pCount.innerText = arrayWords.length;
 }
 
 // Requisito 5
