@@ -31,6 +31,17 @@ function randomClassSkew() {
   return classSize;
 }
 
+// Requisito 17
+function newRandomClass(event) {
+  const spanWord = document.getElementById(event.target.id);
+  spanWord.className = '';
+  spanWord.classList.add(randomClassStyle());
+  spanWord.classList.add(randomClassSize());
+  spanWord.classList.add(randomClassRotate());
+  spanWord.classList.add(randomClassSkew());
+  console.log(spanWord);
+}
+
 // Requisito 3 e 4
 function generateLetter() {
   const inputValue = inputLetter.value;
@@ -43,13 +54,14 @@ function generateLetter() {
   for (let words = 0; words < arrayWords.length; words += 1) {
     const spanWord = document.createElement('span');
     spanWord.innerText = `${arrayWords[words]}`;
+    spanWord.setAttribute('id', words);
     spanWord.classList.add(randomClassStyle());
     spanWord.classList.add(randomClassSize());
     spanWord.classList.add(randomClassRotate());
     spanWord.classList.add(randomClassSkew());
+    spanWord.addEventListener('click', newRandomClass);
     pLetter.appendChild(spanWord);
   }
-  console.log(arrayWords);
 }
 
 // Requisito 5
