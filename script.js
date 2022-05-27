@@ -73,7 +73,7 @@ function generateLetter() {
 
 // Requisito 5
 function emptyInput() {
-  if (inputLetter.value === '' || inputLetter.value === ' ') {
+  if (!inputLetter.value.trim()) {
     pLetter.innerText = 'Por favor, digite o conteúdo da carta.';
     pLetter.style.color = 'red';
     pCount.innerText = '';
